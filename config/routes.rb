@@ -4,23 +4,23 @@ Rails.application.routes.draw do
 
   get "dictators", to: "dictators#index"
 
-  resources :dashboard, only: [:show]
+  # resources :dashboard, only: [:show]
 
-  resources :dictators, only: [:index, :show] do
-    resources :bookings, only: [:create]
-  end
+  # resources :dictators, only: [:index, :show] do
+  #   resources :bookings, only: [:create]
+  # end
 
 
-  namespace :owner do
-    resources :bookings, only: [] do
-      member do
-        patch :decline
-        patch :accept
-      end
-    end
+  # namespace :owner do
+  #   resources :bookings, only: [] do
+  #     member do
+  #       patch :decline
+  #       patch :accept
+  #     end
+  #   end
 
-    resources :dictators, only: [:new, :create, :index]
-  end
+  #   resources :dictators, only: [:new, :create, :index]
+  # end
 end
 
 # Rails.application.routes.draw do

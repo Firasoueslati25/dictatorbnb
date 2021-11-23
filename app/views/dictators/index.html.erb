@@ -9,6 +9,11 @@
 <!-- partial:index.partial.html -->
 <div class="card">
 <%= link_to "Know more about us", root_path %>
+<ul>
+  <% @dictators.each do |dictator| %>
+    <li><%= dictator.name %></li>
+  <% end %>
+</ul>
 
   <div class="left">
     <div class="slider"><i class="material-icons">arrow_back</i></div><img class="wordmark" src="https://res.cloudinary.com/dfvlvjxl8/image/upload/v1637683879/kim_jzohwk.jpg" alt="star wars">
