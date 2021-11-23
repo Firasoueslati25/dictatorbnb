@@ -1,11 +1,14 @@
-puts "Cleaning database..."
-User.destroy_all
+# puts "Cleaning database..."
+# User.destroy_all
 
-elon = User.new(name: "Elon Musk", country: "United States", flag_image: "https://static.vecteezy.com/system/resources/previews/000/532/212/original/vector-united-states-of-america-flag-usa-flag-america-flag-background.jpg")
-jeff = User.new(name: "Jeff Bezos", country: "United States", flag_image: "https://static.vecteezy.com/system/resources/previews/000/532/212/original/vector-united-states-of-america-flag-usa-flag-america-flag-background.jpg")
-martha = User.new(name: "Martha", country: "Japan", flag_image: "")
-joe = User.new(name: "Joe", country: "China", flag_image: "")
+# elon = User.new(email: "elon@gmail.com", password: "secret", name: "Elon Musk", country: "United States", flag_image: "https://static.vecteezy.com/system/resources/previews/000/532/212/original/vector-united-states-of-america-flag-usa-flag-america-flag-background.jpg")
+# jeff = User.new(email: "jeff@gmail.com", password: "secret", name: "Jeff Bezos", country: "United States", flag_image: "https://static.vecteezy.com/system/resources/previews/000/532/212/original/vector-united-states-of-america-flag-usa-flag-america-flag-background.jpg")
+# martha = User.new(name: "Martha", country: "Japan", flag_image: "")
+# joe = User.new(name: "Joe", country: "China", flag_image: "")
+
 # Dictators
+
+
 kimmi = Dictator.new(
   name:           "Kim Jong-un",
   description:     "Supreme Leader of North Korea since 2011, second child of Kim Jong-il, Kim is the third of his kind to rule North Korea. One of our best element!",

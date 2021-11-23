@@ -2,7 +2,7 @@ class Dictator < ApplicationRecord
   belongs_to :user
 
   has_many :bookings
-  has_many :reviews, through: :bookings
+  has_many :reviews_as_dictator, through: :bookings, source: :reviews
 
   validates :name, presence: true
   validates :description, presence: true
