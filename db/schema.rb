@@ -37,7 +37,7 @@ ActiveRecord::Schema.define(version: 2021_11_23_101038) do
     t.boolean "has_mustache"
     t.boolean "has_descendancy"
     t.boolean "is_vip"
-    t.bigint "user_id", null: false
+    t.bigint "user_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["user_id"], name: "index_dictators_on_user_id"
