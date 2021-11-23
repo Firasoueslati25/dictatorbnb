@@ -1,10 +1,10 @@
 class DictatorsController < ApplicationController
   def index
-    @Dictators = Dictator.all
+    @dictators = Dictator.all
   end
 
   def show
-    @Dictator = Dictator.find(params[:id])
+    @dictator = Dictator.find(params[:id])
     @review = Review.new
   end
 
