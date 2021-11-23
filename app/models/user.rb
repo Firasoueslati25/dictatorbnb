@@ -16,4 +16,3 @@ class User < ApplicationRecord
   validates :country, presence: true
   validates :flag_image, presence: true
 end
-
