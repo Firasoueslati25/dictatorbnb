@@ -1,2 +1,15 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-sm-10 col-sm-offset-1">
+      <h1>All dictators</h1>
+      <ul class="list-group">
+        <% @dictators.each do |dictator| %>
+          <li class="list-group-item">
+            <%= link_to dictator.name, dictator_path(dictator) %>
+          </li>
+        <% end %>
+      </ul>
+      <%= link_to "Add a new dictator", new_dictator_path, class: 'btn btn-primary' %>
+    </div>
+  </div>
+</div>
