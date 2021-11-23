@@ -1,5 +1,5 @@
 class BookingsController < ApplicationController
-  # skip_before_action :authenticate_user!, only: [:home]
+  skip_before_action :authenticate_user!, only: [:home]
 
   def new
     # we need @dictator in our `simple_form_for`
