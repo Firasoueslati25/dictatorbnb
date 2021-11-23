@@ -11,7 +11,7 @@ class CreateDictators < ActiveRecord::Migration[6.0]
       t.boolean :is_vip
       t.references :user, null: false, foreign_key: true
 
-      t.timestamps
+      t.timestamps null: false
     end
   end
 end
