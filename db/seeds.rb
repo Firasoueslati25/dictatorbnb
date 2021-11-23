@@ -89,25 +89,73 @@ vlady = Dictator.new(
 vlady.save!
 
 yowi = Dictator.new(
-  name: "Yoweri Museveni",
-  description: "When he took the power in 1986, he promises to leave in 1990, then in 1996, then in 2001, then in 2006, then in 2011, then in 2015, then never",
-  price_per_day: 4200,
-  has_mercenary: false,
-  has_nuclear: false,
-  has_mustache: true,
-  has_descendancy: false,
-  is_vip: true
+  name:            "Yoweri Museveni",
+  description:     "When he took the Ugandan power in 1986, he promises to leave in 1990, then in 1996, then in 2001, then in 2006, then in 2011, then in 2015, then never. A true marathon runner.",
+  price_per_day:   10_200,
+  has_mercenary:   true,
+  has_nuclear:     false,
+  has_mustache:    true,
+  has_descendancy: true,
+  is_vip:          true
 )
 yowi.save!
 
 issy = Dictator.new(
-  name: "Isaias Afwerki",
-  description: "",
-  price_per_day: 7800,
-  has_mercenary: true,
-  has_nuclear: false,
-  has_mustache: true,
-  has_descendancy: false,
-  is_vip: true
+  name:           "Isaias Afwerki",
+  description:     "One of the underdogs of our Dictators! In 2021, Reporters Without Borders ranked Eritrea, under the government of Isaias, last out of 180 countries in its Press Freedom Index.",
+  price_per_day:   10_800,
+  has_mercenary:   true,
+  has_nuclear:     false,
+  has_mustache:    true,
+  has_descendancy: true,
+  is_vip:          true
 )
 issy.save!
+
+obibi = Dictator.new(
+  name:           "Teodoro Obiang Nguema Mbasogo",
+  description:     "He describes himself as 'the country's god with all power over men and things.' It added that the he was 'in permanent contact with the Almighty and can decide to kill without anyone calling him to account and without going to hell.' Good old Obiang!",
+  price_per_day:   11_200,
+  has_mercenary:   true,
+  has_nuclear:     false,
+  has_mustache:    false,
+  has_descendancy: true,
+  is_vip:          true
+)
+obibi.save!
+
+nicoco = Dictator.new(
+  name:           "Nicolas Maduro",
+  description:     "A promising one! Height years as a president and he litteraly putted down is own country! The US Department of Justice offers a $15 million reward for information that helps 'bring him to justice'.",
+  price_per_day:   7800,
+  has_mercenary:   false,
+  has_nuclear:     false,
+  has_mustache:    true,
+  has_descendancy: true,
+  is_vip:          false
+)
+nicoco.save!
+
+alexou = Dictator.new(
+  name:           "Alexander Lukashenko",
+  description:     "Lukashenko promotes himself as a 'man of the people'. Funny Luka, being there for almost 30 years joking and repressing opponents, betraying allies and harassing minorities. Funny guy, really.",
+  price_per_day:   12_800,
+  has_mercenary:   false,
+  has_nuclear:     false,
+  has_mustache:    true,
+  has_descendancy: true,
+  is_vip:          true
+)
+alexou.save!
+
+xixi = Dictator.new(
+  name:           "Xi Jinping",
+  description:     "This guy is probably one of the most wanted of our Dictators. Xi is pragmatic, serious, cautious, hard-working, down to earth and low-key and is ranked 9 out of 10 in domestic approval ratings. By Chinese, of course.",
+  price_per_day:   15_800,
+  has_mercenary:   true,
+  has_nuclear:     true,
+  has_mustache:    false,
+  has_descendancy: true,
+  is_vip:          false
+)
+xixi.save!
