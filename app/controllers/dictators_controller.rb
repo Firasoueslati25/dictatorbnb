@@ -24,6 +24,6 @@ class DictatorsController < ApplicationController
   private
 
   def dictator_params
-    params.require(:dictator).permit(:name, :address, :description, :price_per_day)
+    params.require(:dictator).permit(:name, :description, :price_per_day)
   end
 end
