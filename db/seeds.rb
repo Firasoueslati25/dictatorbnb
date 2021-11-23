@@ -10,6 +10,7 @@ jeff = User.new(email: "jeff@gmail.com", password: "secret", name: "Jeff Bezos",
 
 
 kimmi = Dictator.new(
+  # user_id: "1",
   name:           "Kim Jong-un",
   description:     "Supreme Leader of North Korea since 2011, second child of Kim Jong-il, Kim is the third of his kind to rule North Korea. One of our best element!",
   price_per_day:   13000,

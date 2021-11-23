@@ -1,5 +1,5 @@
 class Dictator < ApplicationRecord
-  belongs_to :user, optional: true
+  belongs_to :user
 
   has_many :bookings
   has_many :reviews, through: :bookings

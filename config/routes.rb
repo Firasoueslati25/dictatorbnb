@@ -1,13 +1,15 @@
 Rails.application.routes.draw do
   devise_for :users
   root to: 'pages#home'
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+
+  get "dictators", to: "dictators#index"
 
   resources :dashboard, only: [:show]
 
   resources :dictators, only: [:index, :show] do
     resources :bookings, only: [:create]
   end
+
 
   namespace :owner do
     resources :bookings, only: [] do
