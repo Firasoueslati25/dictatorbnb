@@ -6,6 +6,7 @@ class User < ApplicationRecord
 
   has_many :dictators, dependent: :destroy
   has_many :bookings
+
   validates :name, presence: true
   validates :country, presence: true
   validates :description, presence: true
