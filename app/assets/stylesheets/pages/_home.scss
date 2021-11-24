@@ -1,1 +1,61 @@
 // Specific CSS for your home-page
+
+.home-banner {
+  // background-image: url("http://2w6kxc22rrr9mabqt1mglgait6.wpengine.netdna-cdn.com/wp-content/uploads/2018/09/dictator-1024x580.jpg");
+  background-size: cover;
+  background-position: 100%;
+  background-repeat: no-repeat;
+  height: 70vh;
+
+.home-container{
+  padding-left: 150px;
+  padding-top: 100px;
+}
+
+}
+.home-title {
+  color: white;
+  font-size: border;
+}
+
+.home-cta {
+  border-radius: 30px;
+  border: 1px black solid;
+  color:white;
+  background-color:rgba(233, 0, 50, 0.945);
+
+
+
+  &:hover {
+    transform: translateY(-2px)
+  }
+}
+
+.home-h2 {
+  color: white;
+  font-weight: bolder;
+  padding-top: 50px;
+}
+
+.home-cards{
+  height: 80vh;
+}
+
+.background-tagline{
+ background-position: cover;
+ background-color: black;
+}
+
+.container{
+
+  background: cover;
+  color: rgb(128, 19, 0);
+  font-size: 2rem;
+  font-weight: bolder;
+  text-align: center;
+  height: 70vh;
+}
+
+.container p {
+  padding-top: 200px;
+}
