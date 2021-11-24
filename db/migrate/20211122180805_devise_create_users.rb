@@ -38,7 +38,6 @@ class DeviseCreateUsers < ActiveRecord::Migration[6.0]
       t.string :flag_image
       t.string :password
 
-      t.timestamps null: false
     end
 
     add_index :users, :email,                unique: true
