@@ -1,59 +1,43 @@
-<html lang="en"><head>
-  <meta charset="UTF-8">
-  <title>Dictators</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"><link rel="stylesheet" href="./style.css">
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-8">
+      <div class="dictator-card">
+        <div class="subcard black-subcard d-flex align-items-center pl-5">
+          <div class="d-flex flex-column justify-content-space-between">
+            <i class="fab fa-2x text-white mb-3 fa-wikipedia-w"></i>
+            <i class="fas fa-2x text-white mb-3 fa-award"></i>
+            <i class="fas fa-2x text-white mb-3 fa-user-secret"></i></i>
+            <i class="fas fa-2x text-white mb-3 fa-radiation"></i>
+            <i class="fas fa-2x text-white mb-3 fa-user-ninja"></i>
+            <i class="fas fa-2x text-white mb-3 fa-fighter-jet"></i></i>
+            <i class="fas fa-2x text-white mb-3 fa-ship"></i></i>
+          </div>
+          <div></div>
+          <div class="subcard red-subcard mt-3 d-flex">
+            <div class="left">
+              <%= cl_image_tag @dictator.picture.key, height: 200, width: 200, crop: :fill, class: "dictator-picture" %>
+            </div>
 
-</head>
-<body>
-<!-- partial:index.partial.html -->
-<div class="card">
+            <div class="right pt-4 px-2">
+              <h1><%= @dictator.name %></h1>
+              <p class="p-0"><%= @dictator.description %></p>
 
-  <div class="left">
-  </div>
-  <%# <div class="right"><img class="helmet" src="https://res.cloudinary.com/dfvlvjxl8/image/upload/c_scale,h_106,q_100,r_15/a_31/v1637679932/stalinn_qb7xot.jpg" alt="helmet"> %>
-  <div class="right"><img class="helmet" src="https://res.cloudinary.com/dfvlvjxl8/image/upload/c_scale,h_205/v1637686733/stalin2_jxrovl.jpg" alt="helmet">
+              <div class="d-flex align-items-center">
+                <p class="dictator-card-price">$<%= @dictator.price_per_day %></p><span>/ day</span>
+              </div>
+            </div>
 
-    <div class="productInfo">
-      <h1>Dictator of the month!<br> "Stalinou" </h1>
-      <h2>$1,299.99</h2>
-      <div class="details">
-        <div class="size">
-          <h4>RENT PER WEEK</h4>
-          <p>1</p>
-          <p>2</p>
-          <p>3</p>
-          <p>4</p>
-        </div>
-        <div class="durability">
-          <h3>83%</h3>
-          <h4>DURABILITY <br> RATE</h4>
+
+            <%#= cl_image_tag @dictator.picture.key, width: 200px, height: 200px %>
+          </div>
         </div>
       </div>
-      <button>WANNA RENT?!</button><i class="material-icons fav">favorite</i><a href="#"><%= link_to "Return to home", root_path %></div></a>
     </div>
 
-    <div class="footer">
-    <div class="footer-links">
-    <a href="#"><i class="fab fa-wikipedia-w"></i></a>
-    <a href="#"><i class="fas fa-award"></i></a>
-    <a href="#"><i class="fas fa-user-secret"></i></i></a>
-    <a href="#"><i class="fas fa-radiation"></i></a>
-    <a href="#"><i class="fas fa-user-ninja"></i></a>
-    <a href="#"> <i class="fas fa-fighter-jet"></i></i></a>
-    <a href="#"><i class="fas fa-ship"></i></i></a>
-      <div class="footer-copyright">____Rent them all, make the world a better <i class="fas fa-heart"></i> place____</div>
-
+    <div class="col-4">
+      <div class="dictator-rent-form-wrapper">
+        ICI VIENDRA LE FORM
+      </div>
     </div>
-    </div>
-
   </div>
-
 </div>
-
-<a class="youtube" href="https://www.youtube.com/watch?v=qqa7YhsroW8">CNN Interview with our sponsor</a>
-<!-- partial -->
-
-
-
-</body></html>
