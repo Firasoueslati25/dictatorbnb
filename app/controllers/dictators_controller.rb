@@ -5,6 +5,10 @@ class DictatorsController < ApplicationController
     @dictators = Dictator.all
   end
 
+  def show
+    @dictator = Dictator.find(params[:id])
+  end
+
   # def create
   #   @dictator = Dictator.new(dictator_params)
   #   @dictator.save
