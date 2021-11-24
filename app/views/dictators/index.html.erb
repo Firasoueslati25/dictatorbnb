@@ -1,44 +1,14 @@
-<html lang="en"><head>
-  <meta charset="UTF-8">
-  <title>Dictators</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"><link rel="stylesheet" href="./style.css">
+<html lang="en">
 
-</head>
 <body>
-<!-- partial:index.partial.html -->
 <div class="card">
-<%= link_to "Know more about us", root_path %>
+<% @dictators.each do |dictator| %>
+    <li><%= link_to dictator.name, dictator_path(dictator) %></li>
+  <% end %>
+</div>
 
+<ul>
+<%= link_to "Return to home", "/", class: "btn btn-flat" %>
+</ul>
 
-  <div class="left">
-    <div class="slider"><i class="material-icons">arrow_back</i></div><img class="wordmark" src="https://res.cloudinary.com/dfvlvjxl8/image/upload/v1637683879/kim_jzohwk.jpg" alt="star wars">
-  </div>
-  <%# <div class="right"><img class="helmet" src="https://res.cloudinary.com/dfvlvjxl8/image/upload/c_scale,h_106,q_100,r_15/a_31/v1637679932/stalinn_qb7xot.jpg" alt="helmet"> %>
-  <div class="right"><img class="helmet" src="https://res.cloudinary.com/dfvlvjxl8/image/upload/c_scale,h_205/v1637686733/stalin2_jxrovl.jpg" alt="helmet">
-
-    <div class="productInfo">
-      <h1>Dictator-hub<br> "Who's your favourite?" </h1>
-      <h2>$1,299.99</h2>
-      <div class="details">
-        <div class="size">
-          <h4>RENT PERIOD PER WEEK</h4>
-          <p>1</p>
-          <p>2</p>
-          <p>3</p>
-          <p>4</p>
-        </div>
-        <div class="durability">
-          <h3>75%</h3>
-          <h4>DURABILITY <br> RATE</h4>
-        </div>
-      </div>
-      <button>WANNA RENT?!</button><i class="material-icons fav">favorite</i><a href="#">ADD TO WISHLIST</a>
-      <div class="slider"><i class="material-icons">arrow_forward</i></div>
-    </div>
-  </div>
-
-
-</div><a class="youtube" href="https://www.youtube.com/watch?v=qqa7YhsroW8">CNN Interview with our sponsor ** CNN Interview with our sponsor</a>
-<!-- partial -->
-</body></html>
+</body>

@@ -33,6 +33,7 @@ kassy = Dictator.new(
 )
 kassy.save!
 gurby = Dictator.new(
+    # user_id: "2",
   name:            "Gurbanguly Berdimuhamedow",
   description:     "President of Turkmenistan since February 2007 and re-elected with 97.69% of the votes in 2017, Gurbanguly is only one mount away to become a VIP Dictator. Reach for the stars!",
   price_per_day:   8000,
