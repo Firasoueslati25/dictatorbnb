@@ -7,7 +7,7 @@ User.destroy_all
 
 # rubocop:disable Layout/HashAlignment
 
-# Users updated
+# Users
 
 will = User.create!(
   email: "william@dictatorbnb.com",
@@ -39,8 +39,7 @@ jack = User.create!(
   flag_image: "https://www.india.com/wp-content/uploads/2015/11/china-flag-logo25.jpg"
 )
 
-# Dictators updated
-
+# Dictators
 kimmi = Dictator.new(
   user:            will,
   name:           "Kim Jong-un",
