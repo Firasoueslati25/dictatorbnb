@@ -1,9 +1,15 @@
-<div class="card">
-  <% @dictators.each do |dictator| %>
-    <li><%= link_to dictator.name, dictator_path(dictator) %></li>
-  <% end %>
+<div class="container my-5">
+  <div class="cards">
+    <% @dictators.each do |dictator| %>
+      <%= link_to dictator_path(dictator), class:"link-no-decoration" do %>
+        <div class="card-product">
+          <%= cl_image_tag dictator.picture.key %>
+          <div class="card-product-infos">
+            <h2><%= dictator.name %></h2>
+            <p> <%= dictator.description.first(50) %>...Voir plus</p>
+          </div>
+        </div>
+      <% end %>
+    <% end %>
+  </div>
 </div>
-
-<ul>
-  <%= link_to "Return to home", "/", class: "btn btn-flat" %>
-</ul>
