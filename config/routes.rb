@@ -1,3 +1,4 @@
+  Rails.application.routes.draw
   devise_for :users
   root to: 'pages#home'
 
