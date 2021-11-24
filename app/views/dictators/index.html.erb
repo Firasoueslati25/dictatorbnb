@@ -4,14 +4,14 @@
 
 
 <div class="card">
-<% @dictators.each do |dictator| %>
+  <% @dictators.each do |dictator| %>
     <li><%= link_to dictator.name, dictator_path(dictator) %></li>
   <% end %>
 </div>
 
 
 <ul>
-<%= link_to "Return to home", "/", class: "btn btn-flat" %>
+ <%= link_to "Return to home", "/", class: "btn btn-flat" %>
 </ul>
 
 </body>
