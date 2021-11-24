@@ -1,7 +1,7 @@
 class Dictator < ApplicationRecord
   belongs_to :user
 
-  has_many :bookings
+  has_many :bookings, dependant: :destroy
   has_many :reviews, through: :bookings
 
   validates :name, presence: true
