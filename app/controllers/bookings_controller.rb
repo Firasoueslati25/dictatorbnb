@@ -17,9 +17,11 @@ class BookingsController < ApplicationController
 
   private
 
-  def review_params
-    params.require(:review).permit(:start_date)
+  def booking_params
+    params.require(:booking).permit(:id, :name, :description)
   end
 
 end
+
+
 #  dictator_bookings POST   /dictators/:dictator_id/bookings(.:format) bookings#create

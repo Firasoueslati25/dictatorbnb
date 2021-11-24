@@ -1,9 +1,0 @@
-<%= link_to 'Edit', edit_dictator_path(@dictator) %> |
-<%= link_to 'Back', dictators_path %> |
-<%= link_to 'Leave a review', new_dictator_review_path(@dictator) %>
-
-<ul class="list-group">
-  <% @dictator.bookings.each do |booking| %>
-    <li class="list-group-item"><%= booking.start_date %></li>
-  <% end %>
-</ul>
