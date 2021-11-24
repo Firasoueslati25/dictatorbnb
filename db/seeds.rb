@@ -10,15 +10,32 @@
 
 # Users
 
-elon = User.new(name: "Elon Musk", country: "United States", flag_image: "https://static.vecteezy.com/system/resources/previews/000/532/212/original/vector-united-states-of-america-flag-usa-flag-america-flag-background.jpg")
-jeff = User.ne(name: "Jeff Bezos", country: "United States", flag_image: "https://static.vecteezy.com/system/resources/previews/000/532/212/original/vector-united-states-of-america-flag-usa-flag-america-flag-background.jpg")
-martha = User.new(name: "Martha", country: "Japan", flag_image: "")
-joe = User.new(name: "Joe", country: "China", flag_image: "")
+will = User.new(
+  name: "William Joseph Burns",
+  country: "United States",
+  flag_image: "http://www.covertbookreport.com/wp-content/uploads/2015/10/cia-flag-wikimedia.jpg"
+)
+jeff = User.new(
+  name: "Jeff Bezos",
+  country: "United States",
+  flag_image: "https://static.vecteezy.com/system/resources/previews/000/532/212/original/vector-united-states-of-america-flag-usa-flag-america-flag-background.jpg")
+
+hiro = User.new(
+  name: "Hiro Nakamura",
+  country: "Japan",
+  flag_image: "https://drapeau.biz/wp-content/uploads/2019/12/drapeau-japon-png.png"
+)
+
+jack = User.new(
+  name: "Jack Ma",
+  country: "China",
+  flag_image: "https://www.india.com/wp-content/uploads/2015/11/china-flag-logo25.jpg"
+)
 
 # Dictators
 kimmi = Dictator.new(
   name:           "Kim Jong-un",
-  description:     "Supreme Leader of North Korea since 2011, second child of Kim Jong-il, Kim is the third of his kind to rule North Korea. One of our best element!",
+  description:     "Supreme Leader of North Korea since 2011, second child of Kim Jong-il, Kim is the third of his kind to rule North Korea. One of our Top three dictators!",
   price_per_day:   13_000,
   has_mercenary:   true,
   has_nuclear:     true,
@@ -30,7 +47,7 @@ kimmi.save!
 
 kassy = Dictator.new(
   name:            "Kassym-Jomart Tokayev",
-  description:     "President of Kazakhstan since 20 March 2019, after 17 years in the government, Kassym is a great asset specialized in post-Soviet countries. Try him!",
+  description:     "President of Kazakhstan since 20 March 2019, after 17 years in the government, Kassym is a great asset specialized in post-Soviet countries nuclearization. Try him!",
   price_per_day:   3000,
   has_mercenary:   false,
   has_nuclear:     false,
