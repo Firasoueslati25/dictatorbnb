@@ -1,16 +1,14 @@
-<div class="home-banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(http://2w6kxc22rrr9mabqt1mglgait6.wpengine.netdna-cdn.com/wp-content/uploads/2018/09/dictator-1024x580.jpg);">
+<div class="home-banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(<%=image_url('home-banner.jpg') %>);">
   <div class="home-container">
     <h1 class="home-title" >Discover all Dictators!</h1>
       <h2 class="home-h2">Easier simply to book any dictator</h2>
-      <button type="button" class="btn btn-danger home-cta" target="_blank">
-          <%= link_to 'Edition 2021', dictators_paths %>
-    </button>
+      <%= link_to 'Edition 2021', dictators_path, class: "btn btn-danger home-cta" %>
   </div>
 </div>
 
 
 <div class="background-tagline">
-  <div class="container">
+  <div class="container paraph">
     <p>For each of these needs, impose an authoritarian and corrupt regime, control canteen's menu, make neighbors flee, we are available to serve you 24 hours a day, 7 days a week, 365 days a year.</p>
   </div>
 </div>
