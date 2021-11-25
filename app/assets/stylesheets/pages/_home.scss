@@ -5,25 +5,47 @@
   background-position: 100%;
   background-repeat: no-repeat;
   height: 70vh;
+}
 
 .home-container{
-  padding-left: 150px;
+  padding-left: 80px;
   padding-top: 100px;
 }
 
-}
 .home-title {
   color: white;
   font-size: border;
 }
 
 .home-cta {
-  border-radius: 30px;
+  font-size: 22px;
+  border-radius: 15px;
   border: 1px black solid;
+  font-size: bolder;
   color:white;
-  background-color:rgba(233, 0, 50, 0.945);
+  padding: 9px;
+  background-color: #f31a0aef;
+  margin-right: 20px;
 
   &:hover {
+    text-decoration: none;
+    transform: translateY(-2px)
+  }
+}
+
+.home-private {
+  font-size: 22px;
+  margin-left: 20px;
+  border-radius: 15px;
+  border: 1px black solid;
+  font-size: bolder;
+  color:white;
+  padding: 9px;
+  background-color: #f31a0aef;
+
+  &:hover {
+    border: 1px #e4a425 solid;
+    background-color: #e4a425;
     text-decoration: none;
     transform: translateY(-2px)
   }
@@ -35,24 +57,24 @@
   padding-top: 50px;
 }
 
-.home-cards{
+.home-cards {
   height: 80vh;
 }
 
-.background-tagline{
-background-position: cover;
-background-color: black;
+.background-tagline {
+  background-position: cover;
+  background-color: black;
 }
 
-.paraph{
+.paraph {
   background: cover;
-  color: rgb(128, 19, 0);
+  color: rgb(243, 3, 3);
   font-size: 2rem;
-  font-weight: bolder;
+  font-weight: lighter;
   text-align: center;
   height: 50vh;
 }
 
-.paraph p {
-  padding-top: 3em;
+.paraph p{
+  padding-top: 1em;
 }
