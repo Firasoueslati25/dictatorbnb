@@ -1,0 +1,43 @@
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-8">
+      <div class="dictator-card">
+        <div class="subcard black-subcard d-flex align-items-center pl-5">
+          <div class="d-flex flex-column justify-content-space-between">
+            <i class="fab fa-2x text-white mb-3 fa-wikipedia-w"></i>
+            <i class="fas fa-2x text-white mb-3 fa-award"></i>
+            <i class="fas fa-2x text-white mb-3 fa-user-secret"></i></i>
+            <i class="fas fa-2x text-white mb-3 fa-radiation"></i>
+            <i class="fas fa-2x text-white mb-3 fa-user-ninja"></i>
+            <i class="fas fa-2x text-white mb-3 fa-fighter-jet"></i></i>
+            <i class="fas fa-2x text-white mb-3 fa-ship"></i></i>
+          </div>
+          <div></div>
+          <div class="subcard red-subcard mt-3 d-flex">
+            <div class="left">
+              <%= cl_image_tag @dictator.picture.key, height: 200, width: 200, crop: :fill, class: "dictator-picture" %>
+            </div>
+
+            <div class="right pt-4 px-2">
+              <h1><%= @dictator.name %></h1>
+              <p class="p-0"><%= @dictator.description %></p>
+
+              <div class="d-flex align-items-center">
+                <p class="dictator-card-price">$<%= @dictator.price_per_day %></p><span>/ day</span>
+              </div>
+            </div>
+
+
+            <%#= cl_image_tag @dictator.picture.key, width: 200px, height: 200px %>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-4">
+      <div class="dictator-rent-form-wrapper">
+        ICI VIENDRA LE FORM
+      </div>
+    </div>
+  </div>
+</div>
