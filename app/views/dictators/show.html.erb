@@ -36,7 +36,10 @@
 
     <div class="col-4">
       <div class="dictator-rent-form-wrapper">
-        ICI VIENDRA LE FORM
+        <%= simple_form_for [ @user, @dictator ] do |f| %>
+          <%= f.input label: "Discipline starts on", as: :date %>
+          <%= f.submit "Book !", class: "btn btn-primary" %>
+        <% end %>
       </div>
     </div>
   </div>
