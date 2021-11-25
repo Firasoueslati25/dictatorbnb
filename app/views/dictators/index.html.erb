@@ -5,7 +5,7 @@
         <div class="card-product">
           <%= cl_image_tag dictator.picture.key %>
           <div class="card-product-infos">
-            <h2><%= dictator.name %></h2>
+            <h2><%= dictator.name %> <span class="flag-icon flag-icon-<%= dictator.country%>"></span></h2>
             <p> <%= dictator.description.first(50) %>...See more</p>
           </div>
         </div>
