@@ -41,7 +41,7 @@ jack = User.create!(
 
 # Dictators
 kimmi = Dictator.new(
-  user:           hiro,
+  user:            will,
   name:           "Kim Jong-un",
   description:     "Supreme Leader of North Korea since 2011, second child of Kim Jong-il, Kim is the third of his kind to rule North Korea. One of our Top three dictators!",
   price_per_day:   13_000,
