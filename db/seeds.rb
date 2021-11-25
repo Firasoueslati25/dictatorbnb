@@ -149,7 +149,7 @@ yowi = Dictator.new(
 )
 yowi.save!
 
-yowi_profile_pic = File.open(Rails.root.join('db/fixtures', 'bachy.jpg'))
+yowi_profile_pic = File.open(Rails.root.join('db/fixtures', 'yowi.jpg'))
 yowi.picture.attach(io: yowi_profile_pic, filename: 'yowi.jpg', content_type: 'image/jpg')
 
 issy = Dictator.new(
